@@ -118,4 +118,31 @@ void shopping :: administrator()
     goto m;
 }
 
+void shopping :: buyer()
+{
+    m:
+    int choice;
+    cout<<"\n\n\n\t\t\t\t\t\t\t\t Buyer\n";
+    cout<<"\n\t\t\t\t\t\t\t\t |                       |\n";
+    cout<<"\n\t\t\t\t\t\t\t\t | 1) Buy product        |\n";
+    cout<<"\n\t\t\t\t\t\t\t\t |                       |\n";
+    cout<<"\n\t\t\t\t\t\t\t\t | 2) Go Back            |\n";
 
+    cout<<"Enter yout choice : ";
+    cin>>choice;
+
+    switch(choice)
+    {
+        case 1:
+            receipt();
+            break;
+
+        case 2:
+            menu();
+            break;
+
+        default:
+            cout<<"Invalid choice";
+    }
+    goto m;
+}
