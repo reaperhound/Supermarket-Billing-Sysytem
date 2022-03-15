@@ -77,3 +77,8 @@ void shopping :: menu()
     }
     goto m;
 }
+
+void shopping :: administrator()
+{
+    
+}
