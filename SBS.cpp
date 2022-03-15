@@ -80,5 +80,42 @@ void shopping :: menu()
 
 void shopping :: administrator()
 {
-    
+    m:
+    int choice;
+    cout<<"\n\n\n\t\t\t\t\t\t\t\t Administrative Menu\n";
+    cout<<"\n\t\t\t\t\t\t\t\t | 1) Add the product    |\n";
+    cout<<"\n\t\t\t\t\t\t\t\t |                       |\n";
+    cout<<"\n\t\t\t\t\t\t\t\t | 2) Modify the product |\n";
+    cout<<"\n\t\t\t\t\t\t\t\t |                       |\n";
+    cout<<"\n\t\t\t\t\t\t\t\t | 3) Delete the product |\n";
+    cout<<"\n\t\t\t\t\t\t\t\t |                       |\n";
+    cout<<"\n\t\t\t\t\t\t\t\t | 4) Back to Main Menu  |\n";
+
+    cout<<"\n\n\t Please enter your choice ";
+    cin>>choice;
+
+    switch(choice)
+    {
+        case 1:
+            add();
+            break;
+        
+        case 2:
+            edit();
+            break;
+
+        case 3:
+            remove();
+            break;
+
+        case 4:
+            menu();
+            break;
+
+        default:
+            cout<<"Imvalid choice";
+    }
+    goto m;
 }
+
+
